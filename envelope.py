@@ -2,12 +2,14 @@ class Envelope:
     def __init__(self, money):
         self.used = False
         self.money = money
-        '''print("was here")
-        print() '''
-
-    def __init__(self):
-        self.used = False
-        self.money = 0
+        print("was in constructor")
 
     def getMoney(self):
         return self.money
+
+    def isUsed(self):
+        return self.used
+
+    def setUsed(self):
+        self.used = True
+

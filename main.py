@@ -12,6 +12,7 @@ if __name__ == '__main__':
     env = []
     for i in range(100):
         env.append(Envelope(10))
+    '''this is my comment'''
 
     '''str1 = BaseStrategy(env)
 

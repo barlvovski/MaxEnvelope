@@ -48,17 +48,30 @@ class Automatic_BaseStrategy(BaseStrategy):
                     loop = False
                 else:
                     env.setUsed()
-                    print(" This envelpoes is", money , " $ ")
+                    print(" This envelope is", money, " $ ")
                     answer = input("If you want to chose and stop press 1 , to continue press any key  ")
                     if answer == "1":
                         loop = False
                         print("Congratulations you won ", money, " $")
 
 
-
+''' N Max Strategy '''
 class N_max_strategy(BaseStrategy):
     def play(self):
         print("was play CCCC  N_max_strategy")
+        mymax = 0
+        timetostop = 0
+
+        for i in  range(1, 100):
+            env = self.envelopes[i]
+            money = env.getMoney()
+            if money > mymax:
+                mymax = money
+                timetostop += 1
+                if timetostop == 3:
+                    break
+
+
 
 class More_then_N_percent_group_strategy(BaseStrategy):
     def __init__(self, envelopes, percent):

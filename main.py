@@ -1,6 +1,10 @@
 # This is a sample Python script.
+#The project :
+# Bar Lvovski
+# Ofir Vol
+# Yonatnan Zontag
+# Noam Harel
 
-# Comments
 
 import random
 from envelope import Envelope

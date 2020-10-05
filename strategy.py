@@ -2,7 +2,12 @@ from envelope import Envelope
 import random
 
 class BaseStrategy:
+
     def __init__(self, envelopes):
+        '''
+        constructor fort basestrategy
+        :param envelopes:
+        '''
         self.envelopes = envelopes
 
 

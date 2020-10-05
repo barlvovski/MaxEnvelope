@@ -12,6 +12,11 @@ class BaseStrategy:
 
 
     def getEnvelope(self, i):
+        '''
+        get specific envelope
+        :param i:  the index of the envelope
+        :return: the envelope
+        '''
         env = Envelope(self.envelopes[i])
         return env
 

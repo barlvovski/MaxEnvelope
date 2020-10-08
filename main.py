@@ -4,8 +4,6 @@
 # Ofir Volk
 # Yonatnan Zontag
 # Noam Harel
-# new line Noam Harel
-
 
 import random
 from envelope import Envelope

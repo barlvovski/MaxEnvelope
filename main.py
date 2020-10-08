@@ -1,7 +1,7 @@
 # This is a sample Python script.
 #The project :
 # Bar Lvovski
-# Ofir Vol
+# Ofir Volk
 # Yonatnan Zontag
 # Noam Harel
 # new line Noam Harel
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         money = random.randrange(1, 5000)
         envelopes.append(Envelope(money))
     '''
-    
+    oprning envelope
     '''
     strategies = []
     strategies.append(BaseStrategy(envelopes))

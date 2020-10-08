@@ -21,6 +21,9 @@ class BaseStrategy:
         return env
 
     def display(self):
+        '''
+        :return: returns the strategy name
+        '''
         print("BaseStrategy")
 
     def play(self):
@@ -45,7 +48,11 @@ class BaseStrategy:
 
 
 class Automatic_BaseStrategy(BaseStrategy):
+
     def display(self):
+        '''
+        :return: returns the strategy name
+        '''
         print("Automatic_BaseStrategy")
 
 
@@ -80,6 +87,9 @@ class N_max_strategy(BaseStrategy):
         self.N = 3
 
     def display(self):
+        '''
+        :return: returns the strategy name
+        '''
         print("N_max_strategy")
 
     def play(self):
@@ -100,6 +110,9 @@ class N_max_strategy(BaseStrategy):
 
 class More_then_N_percent_group_strategy(BaseStrategy):
     def display(self):
+        '''
+        :return: returns the strategy name
+        '''
         print("More_then_N_percent_group_strategy")
 
     def __init__(self, envelopes, percent):

@@ -30,7 +30,7 @@ if __name__ == '__main__':
         money = random.randrange(1, 5000)
         envelopes.append(Envelope(money))
     '''
-    oprning envelope
+    opening envelopes
     '''
     strategies = []
     strategies.append(BaseStrategy(envelopes))

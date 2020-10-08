@@ -3,7 +3,7 @@
 # Bar Lvovski
 # Ofir Volk
 # Yonatnan Zontag
-# Noam Harel1
+# Noam Harel
 
 import random
 from envelope import Envelope

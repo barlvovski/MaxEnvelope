@@ -27,7 +27,10 @@ class BaseStrategy:
         print("BaseStrategy")
 
     def play(self):
-
+        '''
+        first strategy
+        :return: money from youer chosen envelope
+        '''
         print("was play  AAAA   BaseStrategy")
         loop = True
         i = 0

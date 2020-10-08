@@ -1,5 +1,5 @@
 # This is a sample Python script.
-#The project members:
+#The project members :
 # Bar Lvovski
 # Ofir Volk
 # Yonatnan Zontag

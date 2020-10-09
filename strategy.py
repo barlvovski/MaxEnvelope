@@ -60,6 +60,10 @@ class Automatic_BaseStrategy(BaseStrategy):
 
 
     def play(self):
+        '''
+        NEED DOCSTRING HERE!
+        :return:
+        '''
         print("was play BBBB  Automatic_BaseStrategy")
         loop = True
         countUsed = 0
@@ -86,6 +90,10 @@ class Automatic_BaseStrategy(BaseStrategy):
 ''' N Max Strategy '''
 class N_max_strategy(BaseStrategy):
     def __init__(self, envelopes):
+        '''
+        NEED DOCSTRING HERE!
+        :param envelopes:
+        '''
         self.envelopes = envelopes
         self.N = 3
 
@@ -96,6 +104,10 @@ class N_max_strategy(BaseStrategy):
         print("N_max_strategy")
 
     def play(self):
+        '''
+        NEED DOCSTRING HERE!
+        :return:
+        '''
         print("was play CCCC  N_max_strategy")
         mymax = 0
         timetostop = 0
@@ -119,11 +131,20 @@ class More_then_N_percent_group_strategy(BaseStrategy):
         print("More_then_N_percent_group_strategy")
 
     def __init__(self, envelopes, percent):
+        '''
+        NEED DOCSTRING HERE!
+        :param envelopes:
+        :param percent:
+        '''
         self.envelopes = envelopes
         self.percent = float(0.25)
 
 
     def play(self):
+        '''
+        NEED DOCSTRING HERE!
+        :return:
+        '''
         print("was play DDDD  More_then_N_percent_group_strategy")
         loop1 = int(100 * float(self.percent))
         print(loop1)

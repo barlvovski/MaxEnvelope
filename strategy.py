@@ -5,8 +5,8 @@ class BaseStrategy:
 
     def __init__(self, envelopes):
         '''
-        constructor fort basestrategy
-        :param envelopes:
+        constructor for basestrategy
+        :param envelopes: NEED DOCSTRING HERE!
         '''
         self.envelopes = envelopes
 
@@ -28,8 +28,8 @@ class BaseStrategy:
 
     def play(self):
         '''
-        first strategy
-        :return: money from youer chosen envelope
+        NEED DOCSTRING HERE!
+        :return: money from your chosen envelope
         '''
         print("was play  AAAA   BaseStrategy")
         loop = True
@@ -62,7 +62,7 @@ class Automatic_BaseStrategy(BaseStrategy):
     def play(self):
         '''
         NEED DOCSTRING HERE!
-        :return:
+        :return: 
         '''
         print("was play BBBB  Automatic_BaseStrategy")
         loop = True

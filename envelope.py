@@ -2,7 +2,7 @@ class Envelope:
     def __init__(self, money):
         '''
         Constructor of envelope
-        :param money:
+        :param money: NEED DOCSTRING HERE!
         sets used as false
         '''
         self.used = False

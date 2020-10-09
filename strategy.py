@@ -5,8 +5,8 @@ class BaseStrategy:
 
     def __init__(self, envelopes):
         '''
-        constructor for basestrategy
-        :param envelopes: NEED DOCSTRING HERE!
+        constructor of base strategy class
+        :param envelopes: the list of envelopes
         '''
         self.envelopes = envelopes
 
@@ -28,7 +28,8 @@ class BaseStrategy:
 
     def play(self):
         '''
-        NEED DOCSTRING HERE!
+        the play function : choosing the envelope according to the base strategy
+        according to the user choice
         :return: money from your chosen envelope
         '''
         print("was play  AAAA   BaseStrategy")
@@ -61,8 +62,9 @@ class Automatic_BaseStrategy(BaseStrategy):
 
     def play(self):
         '''
-        NEED DOCSTRING HERE!
-        :return: 
+        the function of Automatic_BaseStrategy :
+        random choice of envelope + choice according to the users choice
+        :return:
         '''
         print("was play BBBB  Automatic_BaseStrategy")
         loop = True
@@ -91,7 +93,7 @@ class Automatic_BaseStrategy(BaseStrategy):
 class N_max_strategy(BaseStrategy):
     def __init__(self, envelopes):
         '''
-        NEED DOCSTRING HERE!
+        constructor of nmax strategy
         :param envelopes:
         '''
         self.envelopes = envelopes
@@ -105,8 +107,8 @@ class N_max_strategy(BaseStrategy):
 
     def play(self):
         '''
-        NEED DOCSTRING HERE!
-        :return:
+        Find the max value envelopes after n max values
+        default value is 3 + printing max envelope
         '''
         print("was play CCCC  N_max_strategy")
         mymax = 0
@@ -132,9 +134,9 @@ class More_then_N_percent_group_strategy(BaseStrategy):
 
     def __init__(self, envelopes, percent):
         '''
-        NEED DOCSTRING HERE!
+        constructor of More_then_N_percent_group_strategy
         :param envelopes:
-        :param percent:
+        :param percent: the percent of first find group
         '''
         self.envelopes = envelopes
         self.percent = float(0.25)
@@ -142,8 +144,10 @@ class More_then_N_percent_group_strategy(BaseStrategy):
 
     def play(self):
         '''
-        NEED DOCSTRING HERE!
-        :return:
+        1.finding max envelope in X% of first envelopes (according to percent)
+        2. finding thr first envelopes that greater than we found in 1)
+        3. printing max envelops
+        
         '''
         print("was play DDDD  More_then_N_percent_group_strategy")
         loop1 = int(100 * float(self.percent))
